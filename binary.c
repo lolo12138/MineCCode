@@ -6,8 +6,8 @@ int binary(int a[],int f,int sz)
 {
 	//***[ 易错点]***  int sz=(sizeof a)/(sizeof a[0]);  
 	int left=0;
-	int right=sz;
-	while(left<right)
+	int right=sz-1;
+	while(left<=right)
 	{
 		int mid=(left+right)/2;
 		if (a[mid]<f)
